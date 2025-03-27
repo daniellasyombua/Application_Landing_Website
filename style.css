@@ -44,7 +44,6 @@ color: #000;
 }
 .download
 {
-    border: solid black;
     height: 22cm;
     padding-left: 5cm;
     padding-top: 2.5cm;
@@ -199,7 +198,7 @@ color: #000;
 
 .statistics
 {
-    border: solid black;
+
     margin-top: 2cm;
     padding-left: 3cm;
     margin-bottom: 1cm;
@@ -525,19 +524,6 @@ color: #000;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .Contacts
 {
     display: flex;
@@ -546,7 +532,7 @@ color: #000;
 
 footer{
     background-color: #283150;
-    width: 100%;
+    max-width: 100%;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -568,18 +554,13 @@ footer div{
     display: flex;
 
 }
-#dit-logo{
-    height: 28px;
-    margin-top: 1.4%;
-    margin-left: 40px;
-}
 
 .policy-terms{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    max-width: 104%;
     background-color: rgb(10, 10, 24);
     padding: 3%;
     margin: 0 -5% -2% -2%;
@@ -621,27 +602,26 @@ footer.term-policy p:nth-last-child(1) {
         flex-direction: column;
         align-items: center;
     }
-    .improvement-part {
-        margin-left: 5%;
-        text-align: center;
-    }
-    .side-part {
-        margin-left: 5%;
-        width: 80%;
-        transform: rotate(0deg);
-    }
-    #beard-man-image {
+
+    #customer {
         margin-top: -20%;
         margin-left: 25%;
         width: 50%;
     }
-    .fast-percent {
+    .fast-percentupload {
         margin-left: 10%;
         width: 50%;
     }
 
-    
+    .mobile_interface{
+        flex-direction: column;
 
+    }
+    .profile{
+        margin-left: -5%;
+        width: 70%;
+        transform: rotate(0deg);
+    }
 
     .img-download-app {
         flex-direction: column;
@@ -667,9 +647,29 @@ footer.term-policy p:nth-last-child(1) {
         flex-direction: column;
         gap: 10px;
     }
+    .vectors
+    {
 
-
-
-
+    }
+    .settings{
+        flex-direction: column;
+        margin-left: 5%;
+        width: 80%;
+        transform: rotate(0deg);
+    }
+    .makenew_friends
+    {
+        flex-direction: column;
+        margin-left: -10%;
+        width: 80%;
+        transform: rotate(0deg);
+    }
+    .make_friends
+    {
+        flex-direction: column;
+        margin-left: -10%;
+        width: 80%;
+        transform: rotate(0deg);
+    }
 
 }
