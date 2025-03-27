@@ -73,7 +73,7 @@
 .profile {
     max-width: 40%;
     position: absolute;
-    top: 3cm;
+    top: 1cm;
     left: 30cm;
     height: 16cm;
     width: 15cm;
@@ -81,9 +81,29 @@
     background-color: white;
     rotate: -10deg;
     padding-left: 0.5cm;
+    margin-top: 0.5cm;
 
 }
-
+/* .profile_pictures
+{
+    display: flex;
+    position: absolute;
+    
+}
+.profile_pictures img
+{
+border-radius: 10cm;
+width: 20%;
+}
+.profile_pictures i
+{
+margin-top: 0.5cm;
+margin-left: 0.4cm;
+} */
+.profile_div
+{
+    position: relative;
+}
 #girl-profile {
     width: 30%;
     border-radius: 1.3cm;
@@ -121,6 +141,7 @@
 .salary {
 
     display: flex;
+    
 }
 
 .salary h3 {
@@ -167,7 +188,33 @@
 
     text-align: center;
     font-size: 190%;
+}
+.logos {
+    display: flex;
+    gap: 80px;
+    margin-left: 15%;
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
+#Microsoft-logo{
+    width: 5cm;
+    
+}
+#Trello-logo{
+    width: 5cm;
+    
+}
+#Google-logo{
+    width: 5cm;
 
+}
+#Dropbox-logo{
+    width: 5cm;
+    
+}
+#slack-logo{
+    width: 5cm;
+    
 }
 
 .products {
@@ -221,6 +268,7 @@
     padding-left: 3cm;
     margin-bottom: 1cm;
     padding-bottom: 1cm;
+    margin-left: 2cm;
 }
 
 .ditio_numbers h1 {
@@ -252,10 +300,12 @@
     display: flex;
     position: absolute;
     background-color: white;
-    left: 31cm;
-    top: 39cm;
+    left: 32cm;
+    top: 44.5cm;
+    padding-top: 0.8cm;
     padding-left: 0.5cm;
     padding-right: 0.5cm;
+    border-radius: 0.5cm;
 }
 
 .create_account button {
@@ -268,9 +318,13 @@
     background-color: rgb(74, 74, 116);
     border: none;
 }
-
+#newfriends_signup
+{
+    border: none;
+    background: linear-gradient(to right, #f852b8, #e99fca ,#d147b3);
+}
 #color {
-    height: 2cm;
+    height: 2.5cm;
     background-color: rgb(223, 168, 168);
     border-radius: 0.5cm;
     border-radius: 0.5cm 0.5cm 0cm 0cm;
@@ -280,7 +334,7 @@
     max-width: 30%;
     height: 12.5cm;
     position: absolute;
-    top: 40cm;
+    top: 46cm;
     left: 30cm;
     border-radius: 0.5cm;
     background-color: rgb(248, 242, 244);
@@ -316,7 +370,7 @@
     position: absolute;
     background-color: white;
     left: 28cm;
-    top: 49cm;
+    top: 56cm;
     padding-left: 0.3cm;
     padding-right: 0.3cm;
     padding-bottom: 0.2cm;
@@ -384,7 +438,7 @@
     background-color: white;
     padding-bottom: 1.5cm;
     border-radius: 1cm;
-    top: 63cm;
+    top: 69cm;
     left: 26cm;
     rotate: 8deg;
 }
@@ -408,12 +462,12 @@
 
 .makenew_friends {
     position: absolute;
-    left: 37cm;
+    left: 35cm;
     background-color: white;
     padding-left: 1cm;
     padding-right: 1cm;
     padding-top: 1.5cm;
-    top: 60cm;
+    top: 67cm;
     rotate: 10deg;
     border-radius: 1cm;
 
@@ -434,10 +488,10 @@
 .make_friends {
     position: absolute;
     display: flex;
-    top: 70cm;
+    top: 76cm;
     padding-left: 0.6cm;
     padding-right: 0.6cm;
-    left: 35.5cm;
+    left: 33.5cm;
     background-color: white;
     text-align: center;
     padding-bottom: 1cm;
@@ -573,8 +627,9 @@ footer {
     li:not(:first-child) {
         color: gray;
     }
+    
 }
-
+.upper-footer ul li { list-style-type:none; }
 footer div {
     flex: 1;
 
@@ -583,6 +638,8 @@ footer div {
 .upper-footer {
     display: flex;
     font-size: larger;
+    padding-left: 3cm;
+    line-height: 1.5cm;
 
 }
 
@@ -605,6 +662,15 @@ footer.term-policy p:nth-last-child(1) {
 }
 
 @media only screen and (max-width: 1270px) {
+    .landing_application_body
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        align-items: center;
+        width: 50%;
+    }
     .navigation_bar {
         flex-direction: column;
         align-items: center;
@@ -634,8 +700,18 @@ footer.term-policy p:nth-last-child(1) {
     .download {
         flex-direction: column;
         align-items: center;
+        
     }
-
+    .statistics
+    {
+        text-align: center;
+        display:inline-block;
+        padding-left: 0;
+    }
+    .edwin-zohir
+    {
+        flex-direction: column;
+    }
     #customer {
         margin-top: -20%;
         margin-left: 25%;
@@ -653,11 +729,15 @@ footer.term-policy p:nth-last-child(1) {
     }
 
     .profile {
-        margin-left: -5%;
+        left: 95%;
         width: 70%;
         transform: rotate(0deg);
+        
     }
-
+    .profile_div
+    {
+        flex-direction: column;
+    }
     .img-download-app {
         flex-direction: column;
         align-items: center;
@@ -688,17 +768,21 @@ footer.term-policy p:nth-last-child(1) {
         gap: 10px;
     }
 
-    .vectors {}
+    .vectors {
+
+    }
 
     .settings {
         flex-direction: column;
-        margin-left: 5%;
+        align-items: normal;
+        margin-left: -5%;
         width: 80%;
         transform: rotate(0deg);
     }
 
     .makenew_friends {
         flex-direction: column;
+        align-items: normal;
         margin-left: -10%;
         width: 80%;
         transform: rotate(0deg);
@@ -706,9 +790,21 @@ footer.term-policy p:nth-last-child(1) {
 
     .make_friends {
         flex-direction: column;
+        align-items: normal;
         margin-left: -10%;
         width: 80%;
         transform: rotate(0deg);
     }
+    .logos
+    {
+        flex-direction: column;
 
+
+    }
+    .img-download-app
+    {
+        flex-direction: column;
+        
+
+    }
 }
