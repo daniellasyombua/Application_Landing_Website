@@ -1,10 +1,19 @@
+* {
+    box-sizing: border-box;
+}
 
+@font-face {
+    font-family: nunito;
+    src: url('Nunito-VariableFont_wght\ \(1\).ttf');
+}
 .landing_application_body
 {
     max-width: 100%;
 }
 .navigation_{
-    
+    margin-left: 20%;
+    gap: 40px;
+    display: flex;
 }
 .navigation_bar
 {
@@ -51,29 +60,36 @@ color: #000;
 }
 .profile
 {
-    border: solid black;
     max-width: 40%;
     position: absolute;
-    top: 5cm;
+    top: 3cm;
     left: 30cm;
-    height: 15cm;
+    height: 16cm;
     width: 15cm;
     border-radius: 2cm;
     background-color: white;
     rotate: -10deg;
+    padding-left: 0.5cm;
+
 }
 #girl-profile
 {
     width: 30%;
+    border-radius: 1.3cm;
 }
 .tobepaid
 {
-    border: solid black;
+    
     display: flex;
+}
+.tobepaid p
+{
+    font-size: 120%;
+    margin-top: 1.5cm;
 }
 .work
 {
-    border: solid black;
+    
     display: flex;
 }
 .work_days 
@@ -88,9 +104,8 @@ color: #000;
 }
 .salary
 {
-    border: solid black;
+    
     display: flex;
-    padding-left: 1cm;
 }
 .salary h3{
     font-size: large;
@@ -101,7 +116,6 @@ color: #000;
 #customer
 {
     margin-left: 4.4cm;
-    border: solid black;
 }
 .fast-number {
     transform: rotate(-5deg);
@@ -115,17 +129,20 @@ color: #000;
 
 }
 
-.fast-percent {
+.fast-percentupload {
     display: flex;
     gap: 20px;
     margin-left: 59%;
-    transform: rotate(-5deg);
     background-color: white;
     width: fit-content;
     width: 40%;
+    transform: rotate(-3deg);
     padding-left: 20px;
     border-radius: 15px;
     margin-top: 2%;
+    position: absolute;
+    right: 6cm;
+    top: 16cm;
     
 }
 #business-growth {
@@ -217,11 +234,10 @@ color: #000;
 {
     z-index: 2;
     display: flex;
-    border: solid black;
     position: absolute;
     background-color: white;
-    left: 32cm;
-    top: 44.2cm;
+    left: 31cm;
+    top: 39cm;
     padding-left: 0.5cm;
     padding-right: 0.5cm;
 }
@@ -239,20 +255,20 @@ color: #000;
 #color
 {
     height: 2cm;
-    background-color: aqua;
+    background-color:rgb(223, 168, 168);
     border-radius: 0.5cm;
     border-radius:  0.5cm 0.5cm 0cm 0cm;
 }
 .vectors
 {
-    border: solid black;
+    
     max-width: 30%;
     height: 12.5cm;
     position: absolute;
-    top: 45cm;
+    top: 40cm;
     left: 30cm;
     border-radius: 0.5cm;
-    background-color: rgb(238, 211, 220);
+    background-color: rgb(248, 242, 244);
 }
 #manvector
 {
@@ -277,16 +293,15 @@ color: #000;
 }
 .study_withme
 {
-    border: solid black;
+    
     position: absolute;
     background-color: white;
     border-radius: 0.5cm;
     z-index: 2;
-    border: solid black;
     position: absolute;
     background-color: white;
     left: 28cm;
-    top: 54cm;
+    top: 49cm;
     padding-left: 0.3cm;
     padding-right: 0.3cm;
     padding-bottom: 0.2cm;
@@ -314,11 +329,11 @@ color: #000;
     font-size: 250%;
 }
 .mobile_interface{
-    border: solid black;
-    height: 14cm;
+
+    height: 15.8cm;
     padding-left: 5cm;
     padding-top: 2.5cm;
-    background-color: rgb(214, 214, 224);
+    background-color: rgb(249, 249, 252);
     overflow: hidden;
     
 }
@@ -343,15 +358,14 @@ color: #000;
 .settings
 {
 
-    border: solid black;
     height: 11cm;
     width: 20%;
     position: absolute;
     background-color: white;
     padding-bottom: 1.5cm;
     border-radius: 1cm;
-    top: 68cm;
-    left: 30cm;
+    top: 63cm;
+    left: 26cm;
     rotate: 8deg;
 }
 .settings img
@@ -373,13 +387,12 @@ color: #000;
 .makenew_friends
 {
     position: absolute;
-    border: solid black;
-    left: 42cm;
+    left: 37cm;
     background-color: white;
     padding-left: 1cm;
     padding-right: 1cm;
     padding-top: 1.5cm;
-    top: 62.5cm;
+    top: 60cm;
     rotate: 10deg;
     border-radius: 1cm;
     
@@ -400,8 +413,10 @@ color: #000;
 {
     position: absolute;
     display: flex;
-    top: 72.5cm;
-    left: 42cm;
+    top: 70cm;
+    padding-left: 0.6cm;
+    padding-right: 0.6cm;
+    left: 35.5cm;
     background-color: white;
     text-align: center;
     padding-bottom: 1cm;
@@ -472,7 +487,43 @@ color: #000;
     gap: 230px;
 }
 
+.img-download-app {
+    margin-top: 10%;
+    display: flex;
+    margin-left: 15%;
+    margin-bottom: 2cm;
+}
 
+#yellowhair_img {
+    width: 70%;
+}
+
+.download-stats {
+    margin-top: 30px;
+    width: 20cm;
+    padding-left: 2cm;
+    
+}
+#download-style{
+    font-size: 35px;
+}
+
+#platform{
+    margin-top: 2cm;
+    font-size: larger;
+        
+}
+#platform a{
+    color: black;
+}
+.download-stats button{
+    height: 2cm;
+    width: 5cm;
+    border-radius: 0.5cm;
+    background-color: rgb(5, 5, 56);
+    color: white;
+
+}
 
 
 
@@ -513,12 +564,9 @@ footer div{
    
 }
 
-.footer-upper{
+.upper-footer{
     display: flex;
 
-    img {
-        margin-top: 4%;
-    }
 }
 #dit-logo{
     height: 28px;
@@ -526,7 +574,7 @@ footer div{
     margin-left: 40px;
 }
 
-.policy-term{
+.policy-terms{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -545,5 +593,83 @@ footer.term-policy p:nth-last-child(1) {
 }
 
 @media only screen and (max-width: 1270px) {
+    .navigation_bar{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .navigation
+    {
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 22px;
+    }
+    .signup{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        width: auto;
+    }
     
+    
+    .signup_btn {
+        width: 150px;
+        margin-top: 10px;
+    }
+    .download{
+        flex-direction: column;
+        align-items: center;
+    }
+    .improvement-part {
+        margin-left: 5%;
+        text-align: center;
+    }
+    .side-part {
+        margin-left: 5%;
+        width: 80%;
+        transform: rotate(0deg);
+    }
+    #beard-man-image {
+        margin-top: -20%;
+        margin-left: 25%;
+        width: 50%;
+    }
+    .fast-percent {
+        margin-left: 10%;
+        width: 50%;
+    }
+
+    
+
+
+    .img-download-app {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 5%;
+    }
+    .app-play-button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    #platform {
+        margin-left: 0;
+    }
+    footer {
+        padding: 5%;
+    }
+    .upper-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .policy-terms {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+
+
+
 }
